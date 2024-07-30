@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cap Table Visualizer
+
+Cap Table Visualizer is a web application that allows users to upload and analyze cap table data from OCX (Open Cap Table) files. It provides a comprehensive visual representation of the cap table, including share distributions, stakeholder information, and valuation history.
+
+## Features
+
+- Upload and parse OCX files
+- Display key cap table metrics (total stakeholders, authorized shares, outstanding shares, available for grant)
+- Visualize authorized shares distribution
+- Show stakeholder type distribution
+- Present valuation time series data
+- Detailed cap table summary with share class breakdown
+- Interactive stakeholder table with detailed share information
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- Recharts for data visualization
+- Tanstack Table for advanced table functionality
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v14 or later)
+- npm or yarn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```
+   git clone https://github.com/yourusername/cap-table-visualizer.git
+   ```
 
-## Learn More
+2. Navigate to the project directory:
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   cd cap-table-visualizer
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   npm install
+   ```
 
-## Deploy on Vercel
+   or
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```
+   yarn install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+4. Run the development server:
+
+   ```
+   npm run dev
+   ```
+
+   or
+
+   ```
+   yarn dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+## Usage
+
+1. On the homepage, click the "Upload OCX File" button to select and upload your OCX file.
+2. Once uploaded, the application will process the file and display the cap table visualization.
+3. Explore different sections of the visualization:
+   - Summary metrics at the top
+   - Pie charts showing authorized shares and stakeholder type distributions
+   - Valuation time series chart
+   - Detailed cap table summary
+   - Interactive stakeholder table with hover functionality for detailed share information
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- OCX-parser library for parsing OCX files
+- Recharts for providing powerful charting components
+- shadcn/ui for beautiful and accessible UI components
